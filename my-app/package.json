@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@rodneylab/svelte-social-icons": "^0.0.30",
 		"bits-ui": "^0.21.13",
 		"clsx": "^2.1.1",
 		"embla-carousel-autoplay": "^8.2.0",

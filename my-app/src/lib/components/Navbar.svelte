@@ -1,10 +1,11 @@
 
 <script lang="ts">
-    import {page} from '$app/stores'
 	import { onMount } from 'svelte';
 
 
-    const pageName = getPageNameFromURL(String($page.url))
+    export var pageName = "";
+
+    // $:pageName = getPageNameFromURL(String($page.url))
 
 
     function getPageNameFromURL(url:string){
@@ -27,11 +28,13 @@
             }else{
                 pageLink.className=inactivePageClass;
             }
-        });
+        })
     })
+
+
 </script>
 
-<div class="display flex content-center justify-center border-b-2 bg-opacity-70">
+<div class="display flex content-center justify-center border-b-2 bg-opacity-70" id="navbar">
     <nav
     class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6 bg-white border-y:red"
     >
