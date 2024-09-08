@@ -13,5 +13,6 @@
 </script>
 
 <Navbar {pageName}/>
-
 <slot></slot>
+
+

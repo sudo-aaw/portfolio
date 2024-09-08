@@ -28,7 +28,7 @@
         var topOffset=navbarHeight+8*tileSize;(navbarHeight+11*tileSize)
         var leftOffset = (xTiles/2-5)*tileSize;
         if(browser && document.getElementById("profileCard")){
-            document.getElementById("profileCard").style.top=topOffset+"px"
+            document.getElementById("profileCard").style.top=topOffset+"80px"
             document.getElementById("profileCard").style.left=leftOffset+"px"
         }
     }) ()

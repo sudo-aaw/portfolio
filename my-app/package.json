@@ -44,7 +44,9 @@
 		"embla-carousel-autoplay": "^8.2.0",
 		"embla-carousel-svelte": "^8.2.0",
 		"lucide-svelte": "^0.438.0",
+		"svelte-vertical-timeline": "^1.0.2",
 		"tailwind-merge": "^2.5.2",
-		"tailwind-variants": "^0.2.1"
+		"tailwind-variants": "^0.2.1",
+		"tech-stack-icons": "^2.1.0"
 	}
 }

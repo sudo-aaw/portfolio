@@ -1,0 +1,1 @@
+<img src="https://icon.icepanel.io/AWS/svg/Analytics/QuickSight.svg" alt="quicksight" height="40" width = "40"/>
