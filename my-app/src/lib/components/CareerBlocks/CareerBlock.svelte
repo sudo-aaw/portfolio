@@ -18,7 +18,7 @@
 	import MySql from '$lib/components/techIcons/MySql.svelte';
 
 	import { fade } from 'svelte/transition';
-	import Bim from '$lib/components/CareerBlocks/Bim.svelte';
+	import BulletPointBlock from '$lib/components/CareerBlocks/BulletPointBlock.svelte';
 	import Mexico from '../techIcons/Mexico.svelte';
 
 	export var show: boolean = false;
@@ -30,6 +30,7 @@
 	export var dates = '';
 	export var placement = '';
 
+	export var points = [];
 	export var techStack = ['Python', 'Flask', 'MySql', 'Css', 'HTML', 'Js'];
 
 	function stringToComponent(tech: string) {
@@ -108,9 +109,7 @@
 >
 	{#if show}
 		<div class="opacity-0" transition:fade={{ delay: 250, duration: duration }}>
-			<slot name="detail">
-				<span></span>
-			</slot>
+			<BulletPointBlock {points}/>
 		</div>
 	{/if}
 
@@ -128,22 +127,13 @@
 				{#each techStack as tech}
 					<svelte:component this={stringToComponent(tech)} />
 				{/each}
-
-				<!-- <Python />
-                    <Flask />
-                    <MySql />
-                    <Css />
-                    <HTML />
-                    <Js /> -->
 			</div>
 		</Card.Content>
 	</Card.Root>
 
 	{#if show}
 		<div transition:fade={{ delay: 250, duration: duration }}>
-			<slot name="detail">
-				<span></span>
-			</slot>
+			<BulletPointBlock {points}/>
 		</div>
 	{/if}
 </div>

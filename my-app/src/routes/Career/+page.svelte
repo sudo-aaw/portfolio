@@ -17,7 +17,7 @@
 	import MySql from '$lib/components/techIcons/MySql.svelte';
 
 	import { fade } from 'svelte/transition';
-	import Bim from '$lib/components/CareerBlocks/Bim.svelte';
+	import Bim from '$lib/components/CareerBlocks/BulletPointBlock.svelte';
 	import CareerBlock from '$lib/components/CareerBlocks/CareerBlock.svelte';
 	import CareerTimeline from '$lib/components/CareerBlocks/CareerTimeline.svelte';
 
@@ -78,8 +78,13 @@
 			companyName="@BIM UK Ltd"
 			dates="June 2021 - October 2021"
 			techStack={['Python', 'Flask', 'MySql', 'Css', 'HTML', 'Js']}
+			points={[
+				"Reduced missed maintenance to 0% by developing a Flask app integrated with SmartSheet via its REST API",
+				"Simplified the ordering of new assets by automating the approval and movement of the order sheet document",
+				"Simplified the ordering of new assets by automating the approval and movement of the order sheet document",
+				"Presented training on how to use the application to 10 staff with a range of technical abilities"
+			]}
 		>
-			<span slot="detail"> <Bim /> </span>
 		</CareerBlock>
 
 		<CareerBlock
@@ -90,20 +95,27 @@
 			companyName="@Amazon"
 			dates="June 2022 - December 2022"
 			techStack={['Postgre', 'Quicksight', 'Excel']}
+			points={[
+				"Reduced manual intervention of a 200m row batch job saving 48 hours per year by adding new outlier groupings",
+				"Developed automated ETL pipelines for uploading actuals to databases using XML schema",
+				"Created, refactored and documented Oracle/Postgre SQL data sets on AWS Redshift for QuickSight dashboards",
+				"Effectively articulated technical challenges and solutions to internal customers to gather feedback and requirements"
+			]}
 		>
-			<span slot="detail"> <Bim /> </span>
 		</CareerBlock>
 
 		<CareerBlock
 			{duration}
 			show={showTravelling}
 			bind:hover={hoverTravelling}
-			jobTitle="Travelling"
+			jobTitle="Travelling "
 			companyName="@Mexico"
-			dates="January 2023 - June 2024"
+			dates="March 2023 - June 2024"
 			techStack={['Mexico']}
+			points={[
+				"Lived in Puebla, Mexico",
+			]}
 		>
-			<span slot="detail"> <Bim /> </span>
 		</CareerBlock>
 
 		<CareerBlock
@@ -115,8 +127,13 @@
 			placement="Placement 1 - Business Intelligence"
 			dates="September 2023 - May-2024"
 			techStack={['PowerShell', 'Github', 'PowerBI']}
+			points={[
+				"Enabled data governance without compromising user experience by building an algorithm for logic tables in Dax",
+				"Cut the need for manual conversion of excel files, saving 25 minutes daily, by developing PowerShell scripts",
+				"Minimised dashboard load times from 3+ minutes to 5 seconds by introducing dataflows to the teams architecture",
+				"Lowered the delivery time of dashboards from 2 sprints to 3 days by introducing GitHub and providing training",
+			]}
 		>
-			<span slot="detail"> <Bim /> </span>
 		</CareerBlock>
 
 		<CareerBlock
@@ -128,11 +145,18 @@
 			placement="Placement 2 - Frontend engineer"
 			dates="May 2024 - Current"
 			techStack={['React', 'Css', 'HTML', 'Github', 'Adobe', 'Node', 'Js']}
+			points ={[
+				"Arranged a visit to a bank branch to quickly understand the products use-case and users",
+				"Added documentation including semantic prop descriptions and high level architecture UML diagrams",
+				"Refactored existing unit test to be clearer, reducing churn rate in testing and supporting TDD",
+				"Fixed production bugs with React, Node, Jenkins, GitHub and JavaScript in an agile team"
+			]}
 		>
-			<span slot="detail"> <Bim /> </span>
 		</CareerBlock>
 	</CareerTimeline>
 </div>
+
+
 
 <style>
 	#page {
