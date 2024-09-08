@@ -1,5 +1,4 @@
 <script lang="ts">
-	import PowerBI from './../techIcons/PowerBI.svelte';
 	import HTML from '$lib/components/techIcons/HTML.svelte';
 	import React from '$lib/components/techIcons/React.svelte';
 	import * as Card from '$lib/components/ui/card/index.js';

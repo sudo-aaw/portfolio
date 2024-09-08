@@ -2,11 +2,8 @@
 <script lang="ts">
     import { Button } from "$lib/components/ui/button/index.js";
     import * as Card from "$lib/components/ui/card/index.js";
-    import * as Select from "$lib/components/ui/select/index.js";
-    import { Input } from "$lib/components/ui/input/index.js";
-    import { Label } from "$lib/components/ui/label/index.js";
     import SocialIcons from '@rodneylab/svelte-social-icons';
-	import { onMount } from "svelte";
+
 
 
   
@@ -20,7 +17,7 @@
   </script>
   
    <svelte:window bind:innerWidth bind:innerHeight />
-   <div class="flex flex-col min-h-screen mt-10">
+   <div class="flex flex-col w-[320px]">
     <Card.Root class={tileClass}>
         <Card.Header>
           <Card.Title class="text-center">Archie Aiken-Wood</Card.Title>
@@ -40,8 +37,8 @@
         <Card.Title class="text-center my-2"></Card.Title>
 
         <Card.Footer class="flex justify-between">
-          <Button variant="outline">Cancel</Button>
-          <Button>Deploy</Button>
+          <Button>Shuffle Tiles</Button>
+          <Button>How to use demo?</Button>
         </Card.Footer>
       </Card.Root>
    </div>

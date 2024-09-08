@@ -1,23 +1,5 @@
 <script lang="ts">
-	import HTML from '../../lib/components/techIcons/HTML.svelte';
-	import React from '$lib/components/techIcons/React.svelte';
-	import * as Card from '$lib/components/ui/card/index.js';
-	import Github from '$lib/components/techIcons/Github.svelte';
-	import Node from '$lib/components/techIcons/Node.svelte';
-	import Adobe from '$lib/components/techIcons/Adobe.svelte';
-	import Css from '$lib/components/techIcons/CSS.svelte';
-	import Js from '$lib/components/techIcons/JS.svelte';
-	import PowerShell from '$lib/components/techIcons/PowerShell.svelte';
-	import PowerBi from '$lib/components/techIcons/PowerBI.svelte';
-	import Postgre from '$lib/components/techIcons/Postgre.svelte';
-	import Quicksight from '$lib/components/techIcons/Quicksight.svelte';
-	import Excel from '$lib/components/techIcons/Excel.svelte';
-	import Python from '$lib/components/techIcons/Python.svelte';
-	import Flask from '$lib/components/techIcons/Flask.svelte';
-	import MySql from '$lib/components/techIcons/MySql.svelte';
 
-	import { fade } from 'svelte/transition';
-	import Bim from '$lib/components/CareerBlocks/BulletPointBlock.svelte';
 	import CareerBlock from '$lib/components/CareerBlocks/CareerBlock.svelte';
 	import CareerTimeline from '$lib/components/CareerBlocks/CareerTimeline.svelte';
 
