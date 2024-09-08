@@ -14,7 +14,7 @@
 
     function handleChangeDetail(){
         console.log("change")
-        message = "Click for more details" ? "Click for less details" : "Click for more details";
+        message = message === "Click for more details" ? "Click for less details" : "Click for more details";
         show = !show;
     }
 
